@@ -33,6 +33,6 @@ public class Leetcode_69_Sqrt {
         long i ;
         for( i = 1; i*i <= x ; i++){
         }
-        return (int)(i-1);
+        return (int)(i-1); 
     }
 }
