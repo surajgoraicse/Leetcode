@@ -8,7 +8,7 @@ public class Leetcode_1470_ShuffletheArray {
                 ans[i] = nums[n + i/2];
             }
         }
-        return ans;
+        return ans;  
     }
     public static void main(String[] args) {
         /*
