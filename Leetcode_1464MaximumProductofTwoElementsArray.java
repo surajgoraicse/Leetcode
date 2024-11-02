@@ -28,14 +28,15 @@ public class Leetcode_1464MaximumProductofTwoElementsArray {
 
     }
 
-    public static int maxProduct(int[] nums) {
-        int max = nums[0], secondMax = 0;
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] >= max) {
+    public static int maxProduct(int[] nums) {  // TC => 0(n) SC => 0(1)
+        int max = Integer.MIN_VALUE;
+        int secondMax = Integer.MIN_VALUE;
+        for (int num : nums) {
+            if (num >= max) {
                 secondMax = max;
-                max = nums[i];
-            } else if (nums[i] > secondMax) {
-                secondMax = nums[i];
+                max = num;
+            } else if (num > secondMax) {
+                secondMax = num;
             }
         }
         System.out.println("max : " + max + " secondMax: " + secondMax);
